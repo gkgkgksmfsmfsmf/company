@@ -12,6 +12,22 @@
 <script src="js/jquery.bxslider.js"></script>
 <script src="js/wow.js"></script>
 <script>
+		$(document).ready(function(){
+			// $(".toggleMenu").on("click",function(){});
+			$(".toggleMenu").click(function(){
+				var myClass = $(this).attr("class");
+				console.log(myClass);
+				if(myClass == "toggleMenu"){
+					$(".toggleMenu").addClass("change");
+					$("#main_menu").stop().animate({left:0},300)
+				}else{
+					$(".toggleMenu").removeClass("change");
+					$("#main_menu").stop().animate({left:"-100%"},300)
+				}
+			})
+		});
+	</script>
+<script>
 		new WOW().init();
 </script>
 <script>
@@ -61,6 +77,11 @@
 					</li>
 				</ul>
 			</nav>
+			<div class="toggleMenu">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
 		</div>
 		<div class="slider_wrap">
 			<ul class="slider clearfix">
@@ -114,7 +135,7 @@
 						</div>
 					</a>
 				</li>
-				<li class="ct2st wow fadeInDown" data-wow-delay="0.2s">
+				<li class="ct2st wow fadeInDown" data-wow-delay="0.1s">
 						<div class="slider01Wrap">
 							<ul class="slider01">
 								<li><img src="images/2st_li02.png" alt=""></li>
@@ -131,7 +152,7 @@
 							</div>
 						</div>
 				</li>
-				<li class="ct3st wow fadeInDown" data-wow-delay="0.4s">
+				<li class="ct3st wow fadeInDown" data-wow-delay="0.2s">
 					<div class="slider02Wrap">
 							<ul class="slider02">
 								<li><img src="images/3st_li01.png" alt=""></li>
@@ -148,7 +169,7 @@
 							</div>
 						</div>
 				</li>
-				<li class="ct4st wow fadeInDown" data-wow-delay="0.6s">
+				<li class="ct4st wow fadeInDown" data-wow-delay="0.3s">
 					<a href="#">
 						<div class="pWrap01">
 							<p class="p_one">신라호텔 X 현대자동차</p>
@@ -159,13 +180,13 @@
 						
 					</a>
 				</li>
-				<li class="ct5st wow fadeInDown" data-wow-delay="0.8s">
+				<li class="ct5st wow fadeInDown" data-wow-delay="0.4s">
 					<a href="#">
 						<img src="images/5st_li.png" alt="">
 						<img src="images/youtube_active.png" alt="">
 					</a>
 				</li>
-				<li class="ct6st wow fadeInDown" data-wow-delay="0.8s">
+				<li class="ct6st wow fadeInDown" data-wow-delay="0.4s">
 					<a href="#">
 						<img src="images/6st_li.png" alt="">
 						<div class="pWrap02">
