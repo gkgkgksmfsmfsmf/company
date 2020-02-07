@@ -24,7 +24,21 @@
 					$(".toggleMenu").removeClass("change");
 					$("#main_menu").stop().animate({left:"-100%"},300)
 				}
-			})
+			});
+			// $(window).on("resize",function(){});
+			$(window).resize(function(){
+				var wSize = $(window).width();
+				console.log(wSize);
+				if(wSize>960){
+					$("#header_top").find(".toggleMenu").
+					removeClass("change");
+				}else{
+					$("#header_top").find(".toggleMenu").
+						removeClass("change");
+					$("#main_menu").css({left:"-100%"});
+				}
+			});
+
 		});
 	</script>
 <script>
@@ -135,12 +149,12 @@
 						</div>
 					</a>
 				</li>
-				<li class="ct2st wow fadeInDown" data-wow-delay="0.1s">
+				<li class="ct2st wow fadeInDown" data-wow-delay="0s">
 						<div class="slider01Wrap">
 							<ul class="slider01">
-								<li><img src="images/2st_li02.png" alt=""></li>
-								<li><img src="images/2st_li01.png" alt=""></li>
-								<li><img src="images/2st_li03.png" alt=""></li>
+								<li class="slider01Li"><img src="images/2st_li02.png" alt=""></li>
+								<li class="slider01Li"><img src="images/2st_li01.png" alt=""></li>
+								<li class="slider01Li"><img src="images/2st_li03.png" alt=""></li>
 							</ul>
 							<div class="blackBox">
 								<a href="#">
