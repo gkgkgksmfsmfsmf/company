@@ -91,38 +91,40 @@ a{display: block;}
 	}
 
 	.slider_wrap .slider_txt{
-		width: 400px;
+		width: 300px;
 		position: absolute;
-		top: 35%;
-		left: 50%;margin-left: -200px;
+		top: 43%;
+		left: 50%;margin-left: -160px;
 		_text-align: center;
 		color:white;
 	}
-	.slider_wrap .slider_txt>p{font-size: 14px;}
+	.slider_wrap .slider_txt>p{font-size: 11px;}
 	.slider_wrap .slider_txt h3{
-		font-size:22px;
+		font-size:16px;
 		border-bottom: 3px solid #fff;
 		margin-bottom: 10px;
-		letter-spacing: 13px;
-		width: 400px;
+		letter-spacing: 1px;
+		width: 300px;
+		padding-bottom: 3px;
 	}
 	 
 
 	.slider_wrap .slider_txt .pWrap{
 		background-color: #fff;color:#614d36;width: 80px;
-		text-align: center;font-size: 12px;
+		text-align: center;font-size: 11px;margin-bottom: 1px;
 	}
 
 	.slider_wrap .slider_txt .box a{
-		display: block;width: 135px;
+		display: block;width: 125px;
 		color:white;
-		height: 24px;
+		height: 20px;
 		border: 1px solid #fff;
 		_line-height: 35px;
 		text-align: center;
-		margin-top: 16px;
+		margin-top: 11px;
 		padding-top: 1px;
-		font-size: 13px;
+		font-size: 11px;
+		background-color: rgba(0,0,0,0.4);
 
 	}
 
@@ -134,6 +136,7 @@ a{display: block;}
     box-shadow: none;
     border: 0 none;
     background: #fff;}
+    li.ct3st .bx-wrapper .bx-pager{bottom: 40px;}
 
     .bx-wrapper .bx-controls-direction a {display: none;}
 
