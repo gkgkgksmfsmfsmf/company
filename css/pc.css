@@ -4,7 +4,7 @@ header#main_header{
 	_background-color: lightgray;
 	position: relative;
 	margin-bottom: 100px;
-	min-width: 1260px;
+	/*min-width: 1260px;*/
 }
 a{display: block;}
 /* header_top */
@@ -127,7 +127,7 @@ a{display: block;}
  left: 50%;
  margin-left: -630px;
  bottom: 0;
- min-width: 1260px;
+ /*min-width: 1260px;*/
 }   
 .content>ul>li{
 	float: left;
@@ -262,7 +262,7 @@ li.ct3st .bx-wrapper .bx-pager,li.ct3st  .bx-wrapper .bx-controls-auto {
 .container{
 	height: 750px;
 	background: url(../images/container_bg04.png) no-repeat center fixed;
-	background-size: cover;margin-bottom: 100px;min-width: 1260px;
+	background-size: cover;margin-bottom: 100px;_min-width: 1260px;
 }
 .container .section{width: 1260px;margin: 0 auto;padding-top: 50px;}
 .container h4{text-align: center;color:white;letter-spacing: 8px;margin-bottom: 5px;}
@@ -309,7 +309,7 @@ li.ct3st .bx-wrapper .bx-pager,li.ct3st  .bx-wrapper .bx-controls-auto {
 
 /*made*/
 
-.made{width: 1260px;height: 630px;margin: 0 auto;margin-bottom: 100px;min-width: 1260px;}
+.made{width: 1260px;height: 630px;margin: 0 auto;margin-bottom: 100px;_min-width: 1260px;}
 .made ul{}
 .made ul li.one{width: 315px;height: 630px;background-color:#2e4d8e;float: left;position: relative;}
 .made ul li.one img{position: absolute;top: 80px;left: 50%;margin-left: -50px;}
@@ -382,7 +382,7 @@ li.ct3st .bx-wrapper .bx-pager,li.ct3st  .bx-wrapper .bx-controls-auto {
 	height: 416px;background-color: skyblue;
 	background-image: url(../images/ad_img01.png);
 	position: relative;
-	min-width: 1260px;
+	_min-width: 1260px;
 }
 .ad .ad_Wrap{position: absolute;left: 300px;bottom: 110px;}
 .ad p.ad01{color:white;letter-spacing: 5px;font-size: 23px;margin-bottom: 6px;}
@@ -392,7 +392,7 @@ li.ct3st .bx-wrapper .bx-pager,li.ct3st  .bx-wrapper .bx-controls-auto {
 
 
 /*.footer*/
-.footer{height: 172px;background-color: white;width: 1260px;margin: 0 auto;min-width: 1260px;}
+.footer{height: 172px;background-color: white;width: 1260px;margin: 0 auto;_min-width: 1260px;}
 .footer .footerWrap .le{width: 238px;height: 172px;float: left;}
 .footer .footerWrap .le>img{padding-top: 50px;float: left;margin-right: 40px;width: 238px;height: 117px;}
 .footer .footerWrap div.ri{width: 980px;height: 172px;float: right;}
