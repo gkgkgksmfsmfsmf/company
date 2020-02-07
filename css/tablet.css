@@ -135,6 +135,8 @@ a{display: block;}
     border: 0 none;
     background: #fff;}
 
+    .bx-wrapper .bx-controls-direction a {display: none;}
+
 /* content */
 
  .content{
