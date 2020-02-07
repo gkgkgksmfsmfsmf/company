@@ -28,6 +28,8 @@ a{display: block;}
 	}
 	#header_top > h1{float: left;_background-color: #f00;height: 50px;}
 	#header_top > h1 img{display: block;}
+	#header_top > h1 img.pc_logo{display: block;}
+	#header_top > h1 img.mobile_logo{display: none;}
 	#header_top > #main_menu{float: right;_background-color: #0f0;}
 	#main_menu{line-height: 65px;}
 	#main_menu>ul.menu{}
