@@ -185,30 +185,39 @@ a{display: block;}
 }
 .content>ul>li.ct1st .li_1st_textWrap p.two:hover{background-color:rgba(0,0,0,0.6) ;}*/
 
-.content>ul>li.ct2st{width: 100%;position: relative;}
+.content>ul>li.ct2st{width: 100%;position: relative;height: 240px;}
 .content>ul>li.ct2st .slider01Wrap{height: 240px;}
 .content>ul>li.ct2st .slider01Wrap ul.slider01{width: 100%;}
-.content>ul>li.ct2st .slider01Wrap ul.slider01 img{position: absolute;left:50%;top:50%;transform:scale(1.5) translate(-50%,-50%)}
-.content>ul>li.ct2st .slider01Wrap ul.slider01 .slider01Li{overflow: hidden;background-color: #f00;height: 240px;}
-.content>ul>li.ct2st .slider01Wrap .blackBox{
-	height: 240px;width: 200px;background-color: rgba(0,0,0,0.6);
-	position: absolute;top: 0;right: 0;
+.content>ul>li.ct2st .slider01Wrap ul.slider01 img{
+	position: absolute;left:50%;top:50%;transform:scale(1) translate(-50%,-50%)
 }
-.content>ul>li.ct2st .slider01Wrap .blackBox .pWrap{position: absolute;top: 40%;height: 100px;width:300px;padding-left:20px;}
+.content>ul>li.ct2st .slider01Wrap ul.slider01 .slider01Li{
+	overflow: hidden;_background-color: #f00;height: 240px;
+}
+.content>ul>li.ct2st .slider01Wrap .blackBox{
+	height: 160px;width: 200px;background-color: rgba(0,0,0,0.6);
+	position: absolute;top:40px;right: 0;
+}
+.content>ul>li.ct2st .slider01Wrap .blackBox .pWrap{
+	position: absolute;top: 40%;height: 100px;width:160px;padding-left:10px;
+}
 .content>ul>li.ct2st .slider01Wrap .blackBox p.one01{
-	color:white;font-size: 23px;_position: absolute;left: 10px;height: 53px;
+	color:white;font-size: 17px;_position: absolute;left: 4px;height: 40px;
+	width: 150px;
 }
 .content>ul>li.ct2st .slider01Wrap .blackBox p.one01:after{
-		content:"";display: block;width:280px;height: 2px;
-		background-color: #fff;margin: 10px 0;
+		content:"";display: block;width:180px;height: 2px;
+		background-color: #fff;margin:9px 0;
 	}
-.content>ul>li.ct2st .slider01Wrap .blackBox p.two01{color:white;_width: 250px;left: 10px;_top: 50px;}
+.content>ul>li.ct2st .slider01Wrap .blackBox p.two01{
+	color:white;_width: 250px;left: 10px;_top: 50px;font-size: 13px;
+}
 /*.content>ul>li.ct2st .slider01Wrap ul li{height: 315px;}*/
 
 /*slider01*/
 li.ct2st .bx-wrapper .bx-pager,li.ct2st  .bx-wrapper .bx-controls-auto {
     position: absolute;
-    bottom:30px;
+    bottom:50px;
     right: 0;
     width: 100px;
     z-index: 1;
@@ -231,26 +240,31 @@ li.ct3st .bx-wrapper .bx-pager,li.ct3st  .bx-wrapper .bx-controls-auto {
 /* slider01 끝 */
 
 .content>ul>li.ct3st{
-	width: 75%;
+	width: 100%;
 
 }
 
 
-.content>ul>li.ct3st{width: 75%;background-color: skyblue;position: relative;}
-.content>ul>li.ct3st .slider02Wrap{height: 315px;}
+.content>ul>li.ct3st{width: 100%;background-color: skyblue;position: relative;}
+.content>ul>li.ct3st .slider02Wrap{height: 240px;}
 .content>ul>li.ct3st .slider02Wrap .blackBox01{
-	height: 315px;width: 315px;background-color: rgba(0,0,0,0.7);
-	position: absolute;top: 0;left: 0;
+	height: 160px;width: 200px;background-color: rgba(0,0,0,0.6);
+	position: absolute;top:0px;;left: 0;
 }
-.content>ul>li.ct3st .slider02Wrap .blackBox01 .pWrap{position: absolute;top: 40%;height: 100px;width:300px;padding-left:20px;}
+.content>ul>li.ct3st .slider02Wrap .blackBox01 .pWrap{
+	position: absolute;top: 40%;height: 100px;width:160px;padding-left:10px;
+}
 .content>ul>li.ct3st .slider02Wrap .blackBox01 p.one01{
-	color:white;font-size: 23px;_position: absolute;left: 10px;height: 53px;
+	color:white;font-size: 17px;_position: absolute;left: 4px;height: 40px;
+	width: 150px;
 }
 .content>ul>li.ct3st .slider02Wrap .blackBox01 p.one01:after{
-		content:"";display: block;width:280px;height: 2px;
-		background-color: #fff;margin: 10px 0;
+		content:"";display: block;width:180px;height: 2px;
+		background-color: #fff;margin:9px 0;
 	}
-.content>ul>li.ct3st .slider02Wrap .blackBox01 p.two01{color:white;_width: 250px;left: 10px;_top: 50px;}
+.content>ul>li.ct3st .slider02Wrap .blackBox01 p.two01{
+	color:white;_width: 250px;left: 10px;_top: 50px;font-size: 13px;
+}
 .content>ul>li.ct3st .slider02Wrap ul li{height: 315px;}
 
 
