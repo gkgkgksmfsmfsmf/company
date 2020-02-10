@@ -1,9 +1,9 @@
 @charset "utf-8";
 header#main_header{
-	height: 1950px;
+	height: 1680px;
 	_background-color: lightgray;
 	position: relative;
-	margin-bottom: 100px;
+	margin-bottom:10px;
 }
 a{display: block;}
 /* header_top */
@@ -287,7 +287,7 @@ li.ct3st .bx-wrapper .bx-pager{
 .content>ul>li.ct4st{width:100%;position: relative;height: 240px;}
 .content>ul>li.ct4st img{height: 240px;width: 100%;}
 .content>ul>li.ct4st .pWrap01{
-	position: absolute;bottom:0;right: : 10px;width: 945px;height: 65px;
+	position: absolute;bottom:0;right: : 10px;width: 100%;height: 65px;
 	background-color: rgba(0,0,0,0.4);padding-left: 6px;
 }
 .content>ul>li.ct4st .pWrap01 p.p_one{
@@ -311,34 +311,44 @@ li.ct3st .bx-wrapper .bx-pager{
 
 .content>ul>li.ct6st{width:100%;position: relative;}
 .content>ul>li.ct6st>a>img{width: 100%;height: 240px;}
-.content>ul>li.ct6st .pWrap02{position: absolute;top:20px;left: 10px;}
-.content>ul>li.ct6st .pWrap02>img{_margin-bottom: 140px;position: absolute;top: 160px;}
-.content>ul>li.ct6st .pWrap02>p{padding-left: 13px;color:white;font-size: 15px;letter-spacing: 3px;}
+.content>ul>li.ct6st .pWrap02{position: absolute;top:20px;left: 5px;}
+.content>ul>li.ct6st .pWrap02>img{_margin-bottom: 140px;position: absolute;top: 160px;width: 150px;height: 50px;}
+.content>ul>li.ct6st .pWrap02>p{
+	padding-left: 10px;color:white;font-size: 15px;letter-spacing: 1px;
+	font-weight: bold;
+}
 
 /*container*/
 
 .container{
-	height: 750px;
+	height: 550px;
 	background: url(../images/container_bg04.png) no-repeat center fixed;
-	background-size: cover;margin-bottom: 100px;
+	background-size: cover;margin-bottom: 10px;
 }
-.container .section{width: 1260px;margin: 0 auto;padding-top: 50px;}
-.container h4{text-align: center;color:white;letter-spacing: 8px;margin-bottom: 5px;}
+.container .section{width:100%;margin: 0 auto;padding-top: 50px;}
+.container h4{
+	text-align: center;color:white;letter-spacing: 3px;margin-bottom: 5px;
+	font-size: 11px;
+}
 /*.container h4:after{
 	content:"";display: block;width: 50px;height: 3px;margin: 20px auto;background-color: #fff;
 }*/
 .container .section>p{
-	text-align: center;color:white;font-size: 2.3em;margin-bottom: 120px;
-	font-weight: bold;letter-spacing: 8px;
+	text-align: center;color:white;font-size: 23px;margin-bottom: 20px;
+	font-weight: bold;letter-spacing: 5px;
 }
 
 .container .vision li{
-	float: left;margin-right: 130px;width: 300px;_background-color:skyblue;
-	height: 300px;transition: 0.3s;
+	_float: left;margin-right: 130px;width: 300px;_background-color:skyblue;
+	height: 120px;transition: 0.3s;
 	border: 1px solid none;
-	border-radius: 150px;
+	_border-radius: 150px;
+	padding-left: 37px;
+	margin-bottom: 10px;
+
+
 }
-.container .vision li:first-child{margin-left: 35px;}
+/*.container .vision li:first-child{margin-left: 35px;}*/
 .container .vision li:hover{
 	box-shadow: 8px 8px 10px rgba(0,0,0,0.5);
 	transform: translate(-10px,-10px);
@@ -346,69 +356,90 @@ li.ct3st .bx-wrapper .bx-pager{
 }
 .container .vision .card img{transform:rotateY(0deg) translate(0px);transition:.2s;}
 .container .vision li:hover .card img{transform:rotateY(180deg) translate(20px);}
-.container .vision li:last-child{margin-right: 0;}
+/*.container .vision li:last-child{margin-right: 0;}*/
 .container .vision .card{
-	width: 300px;height: 300px;_background-color: skyblue;
+	width: 300px;height:120px;_background-color: skyblue;
 	position: relative;border: 1px solid none;
-	border-radius: 150px;
+	_border-radius: 150px;
 	margin: 0 auto;
-	background-color: rgba(0,0,0,0.8);
+	background-color: rgba(0,0,0,0.5);
 }
 .container .vision .card img{
-	position: absolute;left: 50%;transform: translateX(-50%);
-	top: 40px;
+	position: absolute;left: 10%;transform: translateX(-50%);
+	top: 15px;width: 20px;height: 20px;
 }
 .container .vision .card .card_body{
-	position: absolute;bottom: 50px;width: 300px;height: 119px;
-	padding: 0 20px;text-align: center;color:white;;
+	position: absolute;bottom: 0px;width: 300px;height: 119px;
+	padding: 0 20px;_text-align: center;color:white;;
 }
 
-.container .vision .card .card_body h3{margin-bottom: 10px;}
+.container .vision .card .card_body h3{
+	margin-bottom: 6px;font-size: 15px;
+	padding-left: 30px;padding-top: 15px;
+}
+.container .vision .card .card_body p{font-size: 11px;letter-spacing: 4px;}
 
 /*made*/
 
-.made{width: 1260px;height: 630px;margin: 0 auto;margin-bottom: 100px;}
+.made{width:100%;height: 945px;margin: 0 auto;margin-bottom:30px;}
 .made ul{}
-.made ul li.one{width: 315px;height: 630px;background-color:#2e4d8e;float: left;position: relative;}
+.made ul li.one{
+	width: 100%;height: 315px;background-color:#2e4d8e;_float: left;position: relative;
+	margin-bottom: 10px;
+}
 .made ul li.one img{position: absolute;top: 80px;left: 50%;margin-left: -50px;}
 .made ul li.one>ul{
-	background-color: #fff;width: 315px;height: 305px;position: absolute;bottom: 10px;
-	border-left: 2px solid #cccccc;border-right: 2px solid #cccccc;
-	padding-top: 110px;
+	background-color: #fff;width:100%;height: 250px;position: absolute;bottom: 10px;
+	/*border-left: 2px solid #cccccc;border-right: 2px solid #cccccc;*/
+	padding-top: 80px;
 }
-.made ul li.one p.news{color:white;position: absolute;top: 200px;font-size: 30px;font-weight: bold;left: 90px;letter-spacing: 3px;}
-.made ul li.one p.puls{position: absolute;bottom: 40px;border-bottom: 1px solid #cccccc;right: 30px;}
-.made ul li.one>span{position: absolute;top: 360px;left: 26px;font-size: 23px;font-weight: bold;}
+.made ul li.one p.news{
+	color:white;position: absolute;top: 8px;
+	font-size: 30px;font-weight: bold;left: 50%;letter-spacing: 3px;margin-left: -70px;
+}
+.made ul li.one p.puls{
+	position: absolute;bottom: 35px;border-bottom: 1px solid #cccccc;right: 40px;}
+.made ul li.one>span{
+	position: absolute;top: 85px;left: 50px;font-size: 23px;font-weight: bold;
+
+}
 /*.made ul li.one>ul>li:after{content: "";border: color:#cccccc;margin: 0 auto;width: 395px;height: 2px;}*/
 .made ul li.one ul>li{border-bottom: 1px solid #cccccc;width: 260px;margin: 0 auto;padding-bottom: 5px;padding-top: 3px;}
 .made ul li.one ul>li>a{letter-spacing: 1px;}
 
-.made ul li.two{width: 630px;height: 630px;background-color: #2e8e5d;float: left;position: relative;}
+.made ul li.two{
+	width: 100%;height: 315px;background-color: #2e8e5d;float: left;position: relative;
+	margin-bottom: 10px;
+}
 .made ul li.two img{position: absolute;top: 85px;left: 50%;margin-left: -50px;}
 .made ul li.two p.event
-{color:white;position: absolute;top: 200px;font-size: 30px;font-weight: bold;left: 235px;
-	letter-spacing: 3px;
+{color:white;position: absolute;top: 8px;font-size: 30px;font-weight: bold;
+	left: 50%;text-align: center;
+	letter-spacing: 3px;width: 200px;margin-left: -100px;
 }
 .made ul li.two>.Wrap{
-	width: 630px;height: 305px;background-color: red;position: absolute;bottom: 10px;
+	width: 100%;height: 250px;background-color: red;position: absolute;_bottom: 10px;
+	top:55px;
 }
 .made ul li.two>.Wrap div.left{
-	float: left;background-color: white;
-	width: 315px;height: 305px;border-right: 2px solid #cccccc;
-	padding-top: 45px;
+	_float: left;background-color: white;
+	width: 100%;height: 250px;border-right: 2px solid #cccccc;
+	padding-top: 25px;padding-left: 40px;
 }
-.made ul li.two>.Wrap div.left span{font-size: 23px;font-weight: bold;padding-left: 90px;margin-bottom: 10px;}
-.made ul li.two>.Wrap div.left p.first{margin-top: 13px;font-size: 18px;padding-left: 55px;margin-bottom: 20px;}
-.made ul li.two>.Wrap div.left p.second{padding-left: 56px;font-size: 14px;}
+.made ul li.two>.Wrap div.left span{
+	font-size: 23px;font-weight: bold;padding-left: 18px;margin-bottom: 10px;}
+.made ul li.two>.Wrap div.left p.first{
+	margin-top: 13px;font-size: 18px;padding-left: 18px;margin-bottom: 20px;}
+.made ul li.two>.Wrap div.left p.second{padding-left: 18px;font-size: 14px;}
 .made ul li.two>.Wrap div.left p.third{
 	border: 1px solid #2e8e5d;width: 200px;line-height: 35px;text-align: center;
 	background-color: #2e8e5d;color:white;font-size: 15px;
 }
-.made ul li.two>.Wrap div.left a{width: 200px;height: 30px;padding-left:55px;padding-top: 35px;}
+.made ul li.two>.Wrap div.left a{width: 200px;height: 30px;padding-left:18px;padding-top: 35px;}
 
-.made ul li.two>.Wrap div.right{
-	float: left;background-color: white;width: 315px;height: 305px;
-	border-right: 2px solid #cccccc;padding-top: 45px;
+.made ul li.two>.Wrap div.right{display: none;
+/*	float: left;background-color: white;width: 315px;height: 305px;
+	border-right: 2px solid #cccccc;padding-top: 45px;*/
 }
 .made ul li.two>.Wrap div.right span{font-size: 23px;font-weight: bold;padding-left: 90px;margin-bottom: 10px;}
 .made ul li.two>.Wrap div.right p.first{margin-top: 13px;font-size: 18px;padding-left: 65px;margin-bottom: 20px;}
@@ -419,51 +450,78 @@ li.ct3st .bx-wrapper .bx-pager{
 }
 .made ul li.two>.Wrap div.right a{width: 200px;height: 30px;padding-left:55px;padding-top: 35px;}
 
-.made ul li.three{width: 315px;height: 630px;background-color:#2e4d8e;float: left;position: relative;}
+.made ul li.three{
+	width: 100%;height: 315px;background-color:#2e4d8e;float: left;position: relative;
+}
 .made ul li.three img{position: absolute;top: 80px;left: 50%;margin-left: -50px;}
 .made ul li.three a.QnA{
-	color:white;position: absolute;top: 200px;font-size: 30px;font-weight: bold;left: 100px;letter-spacing: 3px; 
+	color:white;position: absolute;top: 8px;
+	font-size: 30px;font-weight: bold;left:50%;letter-spacing: 3px; 
+	margin-left: -49px;
 }
 .made ul li.three>ul{
-	background-color: #fff;width: 315px;height: 305px;position: absolute;bottom: 10px;
+	background-color: #fff;width: 100%;height: 250px;position: absolute;bottom: 10px;
 	_border-left: 2px solid #cccccc;border-right: 2px solid #cccccc;
-	padding-top: 110px;
+	padding-top: 80px;
 }
 .made ul li.three ul>li{border-bottom: 1px solid #cccccc;width: 260px;margin: 0 auto;padding-bottom: 5px;padding-top: 3px;}
 .made ul li.three ul>li>a{letter-spacing: 1px;}
-.made ul li.three>span{position: absolute;top: 360px;left: 26px;font-size: 23px;font-weight: bold;}
-.made ul li.three p.puls{position: absolute;bottom: 40px;border-bottom: 1px solid #cccccc;right: 30px;}
+.made ul li.three>span{
+	position: absolute;top: 85px;left: 50px;font-size: 23px;font-weight: bold;}
+.made ul li.three p.puls{
+	position: absolute;bottom: 30px;border-bottom: 1px solid #cccccc;right: 40px;}
 
 
 /*ad*/
 .ad{
-	height: 416px;background-color: skyblue;
-	background-image: url(../images/ad_img01.png);
+	width: 100%;
+	height: 150px;background-color: skyblue;
+	background: url(../images/ad_img01.png);
+	background-size: cover;
 	position: relative;
 }
-.ad .ad_Wrap{position: absolute;left: 300px;bottom: 110px;}
-.ad p.ad01{color:white;letter-spacing: 5px;font-size: 23px;margin-bottom: 6px;}
-.ad p.ad02{color:white;font-size: 45px;letter-spacing: 3px;margin-bottom: 10px;}
-.ad p.ad02 span{padding-left: 20px;color:white;font-size: 45px;letter-spacing: 3px;}
-.ad p.ad03{color:white;letter-spacing: 5px;font-size: 19px}
+.ad .ad_Wrap{position: absolute;left: 30px;top: 25px;top: 30px;}
+.ad p.ad01{color:white;letter-spacing: 5px;font-size:16px;margin-bottom: 6px;}
+.ad p.ad02{color:white;font-size: 25px;letter-spacing: 0px;margin-bottom: 10px;}
+.ad p.ad02 span{padding-left: 20px;color:white;font-size: 25px;letter-spacing: 0px;}
+.ad p.ad03{color:white;_letter-spacing: 5px;font-size:12px}
 
 
 /*.footer*/
-.footer{height: 172px;background-color: white;width: 1260px;margin: 0 auto;}
-.footer .footerWrap .le{width: 238px;height: 172px;float: left;}
-.footer .footerWrap .le>img{padding-top: 50px;float: left;margin-right: 40px;width: 238px;height: 117px;}
-.footer .footerWrap div.ri{width: 980px;height: 172px;float: right;}
-.footer .footerWrap ul.ul_One{width: 980px;_height:172px;padding-top: 30px;margin-bottom: 5px;}
-.footer .footerWrap ul.ul_One>li{width: 130px;height: 20px;float: left;border-right: 1px solid #000;}
+.footer{
+	height: 100px;background-color: white;
+	width: 100%;_margin: 0 auto;font-size: 11px;
+	padding-top: 20px;
+}
+.footer .footerWrap{height: 100px;}
+.footer .footerWrap .le{
+	width: 238px;height: 100px;float: left;display: none;}
+.footer .footerWrap .le>img{
+	padding-top: 50px;float: left;margin-right: 5px;
+	width: 100px;height: 80px;padding-left: 10px;
+}
+.footer .footerWrap div.ri{width: 100%;height: 100px;float: right;}
+.footer .footerWrap ul.ul_One{
+	width: 100%;height:20px;_padding-top: 30px;margin-bottom: 0px;}
+.footer .footerWrap ul.ul_One>li{
+	width:80px;height: 20px;float: left;_border-right: 1px solid #000;
+	padding-left:10px;
+}
 .footer .footerWrap ul.ul_One>li>a{text-align: center;line-height: 20px;}
-.footer .footerWrap ul.ul_One>li:last-child{padding-left:30px;border-right:0;width: 180px;}
-.footer .footerWrap p.address{padding-left: 10px;}
+.footer .footerWrap ul.ul_One>li:last-child{_padding-left:30px;border-right:0;width:115px;}
+.footer .footerWrap p.address{padding-left: 10px;padding-bottom: 3px;padding-top: 3px;}
 .footer .footerWrap p{padding-left: 10px;}
-ul.ul_Two{margin-bottom: 5px;}
+ul.ul_Two{display: none;}
 ul.ul_Two li{float: left;padding-left: 10px;padding-right: 5px;}
 ul.ul_Two li a{}
-div.p_left{float: left;margin-right: 15px;}
-div.p_right>img{float: left;margin-right: 5px;margin-top: 18px;}
+div.p_left{float: left;margin-right: 5px;}
+div.p_right{float: left;width: 60px;margin-left: -10px;margin-top: -3px;}
+div.p_right>img{
+	float: left;margin-right: 5px;margin-top: 16px;
+	width: 15px;height: 15px;
+}
+
+
 
 /*sub*/
 #sub_header{
