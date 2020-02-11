@@ -204,7 +204,7 @@ a{display: block;}
 	overflow: hidden;_background-color: #f00;height: 240px;
 }
 .content>ul>li.ct2st .slider01Wrap .blackBox{
-	height: 240px;width: 200px;background-color: rgba(0,0,0,0.6);
+	height: 240px;width:50%;background-color: rgba(0,0,0,0.6);
 	position: absolute;top:0px;right: 0;
 }
 .content>ul>li.ct2st .slider01Wrap .blackBox .pWrap{
@@ -265,7 +265,7 @@ li.ct3st .bx-wrapper .bx-pager{
 .content>ul>li.ct3st .slider02Wrap{height: 240px;}
 .content>ul>li.ct3st .slider02Wrap ul.slider02 img{height: 240px;}
 .content>ul>li.ct3st .slider02Wrap .blackBox01{
-	height: 240px;width: 200px;background-color: rgba(0,0,0,0.6);
+	height: 240px;width:50%;background-color: rgba(0,0,0,0.6);
 	position: absolute;top:0px;left: 0;
 }
 .content>ul>li.ct3st .slider02Wrap .blackBox01 .pWrap{
@@ -326,7 +326,7 @@ li.ct3st .bx-wrapper .bx-pager{
 	background: url(../images/container_bg04.png) no-repeat center fixed;
 	background-size: cover;margin-bottom: 10px;
 }
-.container .section{width:100%;margin: 0 auto;padding-top: 50px;}
+.container .section{width:100%;margin: 0 auto;padding-top: 50px;position: relative;}
 .container h4{
 	text-align: center;color:white;letter-spacing: 3px;margin-bottom: 5px;
 	font-size: 11px;
@@ -338,32 +338,56 @@ li.ct3st .bx-wrapper .bx-pager{
 	text-align: center;color:white;font-size: 23px;margin-bottom: 20px;
 	font-weight: bold;letter-spacing: 5px;
 }
-
-.container .vision li{
-	_float: left;margin-right: 130px;width: 300px;_background-color:skyblue;
-	height: 120px;transition: 0.3s;
-	border: 1px solid none;
-	_border-radius: 150px;
-	padding-left: 50px;
+/*.container .vision ul{position: relative;}*/
+/*.container .vision li:first-child{
+	width: 300px;
+	height: 120px;
 	margin-bottom: 10px;
-
+	position: absolute;
+	left: 50%;
+	margin-left: -150px;
 
 }
+.container .vision li:nth-child(2){
+	width: 300px;
+	height: 120px;
+	margin-bottom: 10px;
+	position: absolute;
+	left: 50%;
+	margin-left: -150px;
+}
+.container .vision li:last-child{
+	width: 300px;
+	height: 120px;
+	margin-bottom: 10px;
+	position: absolute;
+	left: 50%;
+	margin-left: -150px;
+}*/
+
+
 /*.container .vision li:first-child{margin-left: 35px;}*/
-.container .vision li:hover{
+/*.container .vision li:hover{
 	box-shadow: 8px 8px 10px rgba(0,0,0,0.5);
-	transform: translate(-10px,-10px);
+	transform: translate(-10px,-10px);*/
 
 }
-.container .vision .card img{transform:rotateY(0deg) translate(0px);transition:.2s;}
-.container .vision li:hover .card img{transform:rotateY(180deg) translate(20px);}
+.container .vision>ul>li{
+	width: 300px;/*position: absolute;left: 50%;margin-left: -150px;*/
+	height: 120px;margin-bottom: 10px;
+}
+/*.container .vision .card img{transform:rotateY(0deg) translate(0px);transition:.2s;}*/
+/*.container .vision li:hover .card img{transform:rotateY(180deg) translate(20px);}*/
 /*.container .vision li:last-child{margin-right: 0;}*/
 .container .vision .card{
 	width: 300px;height:120px;_background-color: skyblue;
 	position: relative;border: 1px solid none;
 	_border-radius: 150px;
-	margin: 0 auto;
+	/*left: 50%;margin-left:-150px ;*/
 	background-color: rgba(0,0,0,0.5);
+	left: 50%;margin-left: -150px;
+	margin-bottom: 8px;
+
 }
 .container .vision .card img{
 	position: absolute;left: 10%;transform: translateX(-50%);
@@ -372,6 +396,7 @@ li.ct3st .bx-wrapper .bx-pager{
 .container .vision .card .card_body{
 	position: absolute;bottom: 0px;width: 300px;height: 119px;
 	padding: 0 20px;_text-align: center;color:white;;
+	/*left: 50%;margin-left: -150px;*/
 }
 
 .container .vision .card .card_body h3{
@@ -402,11 +427,14 @@ li.ct3st .bx-wrapper .bx-pager{
 	position: absolute;bottom: 35px;border-bottom: 1px solid #cccccc;right: 40px;}
 .made ul li.one>span{
 	position: absolute;top: 85px;left: 50px;font-size: 23px;font-weight: bold;
-
+	letter-spacing: 3px;
 }
 /*.made ul li.one>ul>li:after{content: "";border: color:#cccccc;margin: 0 auto;width: 395px;height: 2px;}*/
-.made ul li.one ul>li{border-bottom: 1px solid #cccccc;width: 260px;margin: 0 auto;padding-bottom: 5px;padding-top: 3px;}
-.made ul li.one ul>li>a{letter-spacing: 1px;}
+.made ul li.one ul>li{
+	border-bottom: 1px solid #cccccc;width: 350px;
+	margin: 0 auto;padding-bottom: 5px;padding-top: 3px;
+	}
+.made ul li.one ul>li>a{letter-spacing: 3px;_text-align: center;}
 
 .made ul li.two{
 	width: 100%;height: 315px;background-color: #2e8e5d;float: left;position: relative;
@@ -428,15 +456,23 @@ li.ct3st .bx-wrapper .bx-pager{
 	padding-top: 25px;padding-left: 40px;
 }
 .made ul li.two>.Wrap div.left span{
-	font-size: 23px;font-weight: bold;padding-left: 18px;margin-bottom: 10px;}
+	font-size: 23px;font-weight: bold;padding-left: 18px;margin-bottom: 10px;
+	letter-spacing: 3px;
+}
 .made ul li.two>.Wrap div.left p.first{
-	margin-top: 13px;font-size: 18px;padding-left: 18px;margin-bottom: 20px;}
-.made ul li.two>.Wrap div.left p.second{padding-left: 18px;font-size: 14px;}
+	margin-top: 13px;font-size: 18px;padding-left: 18px;margin-bottom: 20px;
+	letter-spacing: 3px;
+}
+.made ul li.two>.Wrap div.left p.second{
+	padding-left: 18px;font-size: 15px;
+	letter-spacing: 3px;
+}
 .made ul li.two>.Wrap div.left p.third{
-	border: 1px solid #2e8e5d;width: 200px;line-height: 35px;text-align: center;
+	border: 1px solid #2e8e5d;width: 330px;line-height: 35px;text-align: center;
 	background-color: #2e8e5d;color:white;font-size: 15px;
 }
-.made ul li.two>.Wrap div.left a{width: 200px;height: 30px;padding-left:18px;padding-top: 35px;}
+.made ul li.two>.Wrap div.left a{
+	width: 200px;height: 30px;padding-left:18px;padding-top: 35px;}
 
 .made ul li.two>.Wrap div.right{display: none;
 /*	float: left;background-color: white;width: 315px;height: 305px;
@@ -465,8 +501,10 @@ li.ct3st .bx-wrapper .bx-pager{
 	_border-left: 2px solid #cccccc;border-right: 2px solid #cccccc;
 	padding-top: 80px;
 }
-.made ul li.three ul>li{border-bottom: 1px solid #cccccc;width: 260px;margin: 0 auto;padding-bottom: 5px;padding-top: 3px;}
-.made ul li.three ul>li>a{letter-spacing: 1px;}
+.made ul li.three ul>li{
+	border-bottom: 1px solid #cccccc;width: 350px;
+	margin: 0 auto;padding-bottom: 5px;padding-top: 3px;}
+.made ul li.three ul>li>a{letter-spacing: 3px;}
 .made ul li.three>span{
 	position: absolute;top: 85px;left: 50px;font-size: 23px;font-weight: bold;}
 .made ul li.three p.puls{
@@ -478,7 +516,7 @@ li.ct3st .bx-wrapper .bx-pager{
 	width: 100%;
 	height: 150px;background-color: skyblue;
 	background: url(../images/ad_img01.png);
-	background-size: cover;
+	_background-size: cover;
 	position: relative;
 }
 .ad .ad_Wrap{position: absolute;left: 30px;top: 25px;top: 30px;}
