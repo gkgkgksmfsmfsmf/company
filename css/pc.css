@@ -504,15 +504,21 @@ div.p_right>img{float: left;margin-right: 5px;margin-top: 18px;}
 	color:#162e58;position: absolute;top: 80px;left: 50%;margin-left: -80px;
 	font-size: 26px;
 }
+.location>p.sub01_06{
+	color:#162e58;position: absolute;top: 80px;left: 50%;margin-left: -40px;
+	font-size: 26px;
+}
+
 .location>p:before{
 	content: "";display: block;background-color: #162e58;width: 30px;height: 2px;
 	margin: 0 auto;margin-bottom: 8px;
 }
 
 /*sub_img*/
-
+.sub_img_06>img{margin: 0 auto;display: block;width: 100%;}
 .sub_img{width: 1260px;margin: 0 auto;}
 .sub_img>img{margin: 0 auto;display: block;width: 100%;}
+
 
 /*sub_footer*/
 .footerbg{width: 100%;background-color: #f2e3c4;}
